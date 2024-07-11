@@ -4,21 +4,24 @@
         "category": "pants",
         "match_with": ["shirt", "top"],
         "occasion": "casual",
-        "season": "spring"
+        "season": "spring",
+        "image_path": "/static/images/blue_jeans.jpg"
     },
     {
         "description": "Black Leather Jacket",
         "category": "coat",
         "match_with": ["shirt", "top"],
         "occasion": "formal",
-        "season": "winter"
+        "season": "winter",
+        "image_path": "/static/images/black_jacket.jpg"
     },
     {
         "description": "White Sneakers",
         "category": "shoes",
         "match_with": ["shirt", "top", "pants"],
         "occasion": "casual",
-        "season": "summer"
+        "season": "summer",
+        "image_path": "/static/images/white_sneakers.jpg"
     }
     // Add more items as needed
 ]
