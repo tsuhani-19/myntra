@@ -1,0 +1,24 @@
+[
+    {
+        "description": "Blue Denim Jeans",
+        "category": "pants",
+        "match_with": ["shirt", "top"],
+        "occasion": "casual",
+        "season": "spring"
+    },
+    {
+        "description": "Black Leather Jacket",
+        "category": "coat",
+        "match_with": ["shirt", "top"],
+        "occasion": "formal",
+        "season": "winter"
+    },
+    {
+        "description": "White Sneakers",
+        "category": "shoes",
+        "match_with": ["shirt", "top", "pants"],
+        "occasion": "casual",
+        "season": "summer"
+    }
+    // Add more items as needed
+]
