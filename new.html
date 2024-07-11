@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardrobe</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Image</h1>
+        <div class="upload-section">
+            <form id="uploadForm" action="/classify" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" id="imageUpload" accept="image/*" required>
+                <select name="occasion" id="occasion">
+                    <option value="" disabled selected>Occasion</option>
+                    <option value="casual">Casual</option>
+                    <option value="formal">Formal</option>
+                    <option value="date">Date</option>
+                    <option value="party">Party</option>
+                    <option value="work">Work</option>
+                </select>
+                <select name="season" id="season">
+                    <option value="" disabled selected>Season</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                    <option value="winter">Winter</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="image-preview" id="imagePreview"></div>
+        <div class="results" id="results"></div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
